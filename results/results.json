@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-10-24T03:13:39.169Z",
+  "hypothesis": "アイコンのみ保存ボタンの名前欠落は、画像比較だけでは検出できず、ARIA 比較を追加すると検出できる",
+  "rows": [
+    {
+      "state": "normal",
+      "run": 1,
+      "screenshot": "match",
+      "aria": "match"
+    },
+    {
+      "state": "normal",
+      "run": 2,
+      "screenshot": "match",
+      "aria": "match"
+    },
+    {
+      "state": "normal",
+      "run": 3,
+      "screenshot": "match",
+      "aria": "match"
+    },
+    {
+      "state": "name-missing",
+      "run": 1,
+      "screenshot": "match",
+      "aria": "mismatch"
+    },
+    {
+      "state": "name-missing",
+      "run": 2,
+      "screenshot": "match",
+      "aria": "mismatch"
+    },
+    {
+      "state": "name-missing",
+      "run": 3,
+      "screenshot": "match",
+      "aria": "mismatch"
+    },
+    {
+      "state": "color-changed",
+      "run": 1,
+      "screenshot": "mismatch",
+      "aria": "match"
+    },
+    {
+      "state": "color-changed",
+      "run": 2,
+      "screenshot": "mismatch",
+      "aria": "match"
+    },
+    {
+      "state": "color-changed",
+      "run": 3,
+      "screenshot": "mismatch",
+      "aria": "match"
+    }
+  ]
+}

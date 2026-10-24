@@ -1,0 +1,9 @@
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+results/playwright-report.json
+agent-tools/
+uploads/
+.DS_Store
+*.log

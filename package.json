@@ -1,0 +1,23 @@
+{
+  "name": "aria-regression-lab",
+  "version": "1.0.0",
+  "description": "見た目が変わらない名前欠落を、画像比較と ARIA スナップショット比較で検証するミニラボ",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "baselines": "node scripts/update-baselines.js",
+    "measure": "node scripts/collect-results.js",
+    "verify": "npm ci && npx playwright install chromium && npx playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "aria",
+    "accessibility",
+    "screenshot",
+    "regression"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}
