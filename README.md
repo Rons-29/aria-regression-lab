@@ -110,12 +110,3 @@ npx playwright test
 試したこと：保存ボタン3状態を、画像比較とARIA比較で各3回検証。作業時間約45分。  
 分かったこと：名前欠落の検出は画像［0/3］、ARIA［3/3］。色変更への反応は画像不一致3/3・ARIA一致3/3。  
 使える条件：Chromiumのみ、固定viewport 800×600（`deviceScaleFactor: 1`）、画像比較は `maxDiffPixels: 0`・`animations: 'disabled'`（`threshold` は未設定）。今回はChromium・静的ボタンのみで、読み上げ操作は未検証。
-
-## X投稿案
-
-```
-見た目が同じでも、保存ボタンの「名前」が消えたら検出できるか。
-架空UIの正常・名前欠落・色変更の3状態を、画像比較とPlaywrightのARIA比較で各3回検証。名前欠落の検出は画像［0/3］、ARIA［3/3］でした。
-Chromiumの静的UI限定。読み上げ操作は未検証です。
-再現コード：https://github.com/Rons-29/aria-regression-lab
-```
